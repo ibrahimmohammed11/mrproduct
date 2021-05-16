@@ -1,0 +1,19 @@
+.navBg{
+    background-image: linear-gradient(to right, #F83600, #fe8c00);
+
+}
+.searchColor
+{
+    background-color:  #fe8c00;
+    position: absolute;
+    right: -10%;
+}
+input:focus{
+    outline: none !important;
+}
+
+.navIcon:hover{
+    fill: white;
+}
+
+

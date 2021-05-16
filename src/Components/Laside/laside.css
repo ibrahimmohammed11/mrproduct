@@ -1,0 +1,345 @@
+.lsideBord{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 40px;
+}
+.lsidecolor{
+    color: rgba(128, 128, 128,.5);
+}
+
+.mColor{
+    color:  #F83600;
+}
+
+.ISize{
+    font-size: 12px;
+}
+
+hr {
+    height: 2px;
+    background: rgba(153,153,153,.1);
+}
+.lsIcon{
+    fill: rgba(128, 128, 128,.5);
+}
+.newsfeedMar{
+    margin-right: 8px;
+}
+.newsfeedPad{
+    padding-left: 13px;
+}
+.lsideGrid1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    padding-right: 20px;
+}
+.hrWidth{
+    width: 87%;
+    height: 2px;
+}
+.shopMar{
+    margin-left: 90px;
+}
+.catMar{
+    margin-left: 82px;
+}
+
+.contain{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+    'lSide products products rSide'
+    'lSide products products rSide';
+
+    grid-column-gap: 40px;
+}
+
+.lSide { grid-area: lSide; }
+.products { grid-area: products; }
+.rSide { grid-area: rSide; }
+/*------------------------ media-------------------------- */
+@media only screen and (max-width: 400px) {
+.cont5{
+    display: grid;
+    grid-template-columns:auto auto;
+    grid-auto-rows: repeat(auto-fit,minmax(100px,145px));
+    grid-template-areas: 
+    "stock1 ....."
+    "stock1 ....."
+    "stock2 ......"
+    "stock3 ......"
+    "stock4 ......"
+    ;
+    
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+}
+@media only screen and (max-width: 572px) {
+    .searchColor
+    {
+        position: absolute;
+        right:-40px;
+    }
+}
+@media only screen and (min-width: 573px) {
+    .searchColor
+    {
+        position: absolute;
+        left:200px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contain{
+        grid-template-areas:
+        'lSide lSide ..... .....'
+        'lSide lSide ...... .....'
+        'products products ...... .....'
+        'rSide rSide ...... ......'
+        ;
+    
+        grid-column-gap: 10px;
+    }
+    .products { margin-left: 10px; }
+
+    .line::before{
+        content: "";
+        left: 8%;
+    }
+    .line::after{
+        content: "";
+        right: 8%;
+    }
+
+    .line1::before{
+        content: "";
+        left: 8%;
+    }
+    .line1::after{
+        content: "";
+        right: 8%;
+    }
+
+    .line2::before{
+        content: "";
+        left: 25%;
+    }
+    .line2::after{
+        content: "";
+        right: 25%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .contain{
+        grid-template-areas:
+        'lSide lSide ..... .....'
+        'lSide lSide ...... .....'
+        'products products ...... .....'
+        'rSide ...... ...... ......'
+        ;
+    
+        grid-column-gap: 15px;
+    }
+    .products { margin-left: 20px; }
+    
+    .line::before{
+        content: "";
+        left: 20%;
+    }
+    .line::after{
+        content: "";
+        right: 20%;
+    }
+
+    .line1::before{
+        content: "";
+        left: 17%;
+    }
+    .line1::after{
+        content: "";
+        right: 17%;
+    }
+
+    .line2::before{
+        content: "";
+        left: 30%;
+    }
+    .line2::after{
+        content: "";
+        right: 30%;
+    }
+}
+@media only screen and (min-width: 768px){
+    .contain{
+        grid-template-areas:
+        'lSide lSide ..... .....'
+        'lSide lSide ..... .....'
+        'products products products products'
+        '..... rSide rSide rSide'
+        ;
+    
+        grid-column-gap: 50px;
+    }
+    .line::before{
+        content: "";
+        left: 25%;
+    }
+    .line::after{
+        content: "";
+        right: 25%;
+    }
+
+    .line1::before{
+        content: "";
+        left: 23%;
+    }
+    .line1::after{
+        content: "";
+        right: 23%;
+    }
+
+    .line2::before{
+        content: "";
+        left: 35%;
+    }
+    .line2::after{
+        content: "";
+        right: 35%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .contain{
+        grid-template-areas:
+        'lSide products products'
+        'lSide products products'
+        "..... ..... rSide";
+    
+        grid-column-gap: 50px;
+    }
+    .line::before{
+        content: "";
+        left: 25%;
+    }
+    .line::after{
+        content: "";
+        right: 25%;
+    }
+
+    .line1::before{
+        content: "";
+        left: 20%;
+    }
+    .line1::after{
+        content: "";
+        right: 20%;
+    }
+
+    .line2::before{
+        content: "";
+        left: 18%;
+    }
+    .line2::after{
+        content: "";
+        right: 18%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .contain{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-areas:
+        'lSide products products rSide'
+        'lSide products products rSide';
+    
+        grid-column-gap: 50px;
+    }
+    
+    .lSide { grid-area: lSide; }
+    .products { grid-area: products; }
+    .rSide { grid-area: rSide; }
+    .line::before{
+        content: "";
+        left: 15%;
+    }
+    .line::after{
+        content: "";
+        right: 15%;
+    }
+
+    .line1::before{
+        content: "";
+        left: 10%;
+    }
+    .line1::after{
+        content: "";
+        right: 10%;
+    }
+
+    .line2::before{
+        content: "";
+        left: 10%;
+    }
+    .line2::after{
+        content: "";
+        right: 10%;
+    }
+    .cont5{
+        display: grid;
+        grid-template-columns:400px 400px;
+        grid-auto-rows: repeat(auto-fit,minmax(100px,145px));
+        grid-template-areas: 
+        "stock1 stock2"
+        "stock1 stock3"
+        "stock1 stock4"
+        ;
+        
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+    }
+}
+@media only screen and (min-width: 1290px) {
+    .contain{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-areas:
+        'lSide products products rSide'
+        'lSide products products rSide';
+    
+        grid-column-gap: 40px;
+    }
+    
+    .lSide { grid-area: lSide; }
+    .products { grid-area: products; }
+    .rSide { grid-area: rSide; }
+    .line::before{
+        content: "";
+        left: 24%;
+    }
+    .line::after{
+        content: "";
+        right: 24%;
+    }
+
+    .line1::before{
+        content: "";
+        left: 18%;
+    }
+    .line1::after{
+        content: "";
+        right: 18%;
+    }
+
+    .line2::before{
+        content: "";
+        left: 18%;
+    }
+    .line2::after{
+        content: "";
+        right: 18%;
+    }
+
+}
+/*------------------------ media-------------------------- */
